@@ -7,14 +7,14 @@ Goods Receipt MCP Template
   - [Neptune DXP SAP Integration Hub Prerequisites](#neptune-dxp-sap-integration-hub-prerequisites)
   - [Neptune DXP Open Edition Prerequisites](#neptune-dxp-open-edition-prerequisites)
   - [Neptune DXP Version Compatibility](#neptune-dxp-version-compatibility)
-    - [Neptune DXP SAP Edition Version](#neptune-dxp-sap-edition-version)
+    - [Neptune DXP SAP Integration Hub Version](#neptune-dxp-sap-integration-hub-version)
     - [Neptune DXP Open Edition Version](#neptune-dxp-open-edition-version)
   - [Recommended Naming Conventions & Namespaces](#recommended-naming-conventions--namespaces)
-- [Neptune DXP SAP Edition Setup](#neptune-dxp-sap-edition-setup)
-  - [Step 1. Import the Included Transport File Into Your SAP System](#neptune-dxp-sap-edition-setup)
-  - [Step 2. Access the Imported Custom Data Provider Class](#neptune-dxp-sap-edition-setup)
-- [Neptune DXP Open Edition Setup](#neptune-dxp-open-edition-setup)
-  - [Step 3. Connecting the included MCP Server Connection in Open Edition to Your Configured Remote System Connection](#step-3-connecting-the-included-api-in-open-edition-to-the-newly-created-api-factory-api-in-sap-edition)
+- [Manual Steps Guide for Neptune DXP Open Edition + SAP (with SAP Integration HUB installed)](#manual-steps-guide-for-neptune-dxp-open-edition--sap-with-sap-integration-hub-installed)
+- [Step 0. Configure a remote system connection in Neptune DXP Open Edition](#step-0-configure-a-remote-system-connection-in-neptune-dxp-open-edition)
+- [Step 1. Import the included transport file to your SAP system](#step-1-import-the-included-transport-file-to-your-sap-system)
+- [Step 2. Access the Hub MCP Designer in your Neptune DXP Open Edition instance](#step-2-access-the-hub-mcp-designer-in-your-neptune-dxp-open-edition-instance)
+- [Step 3. Navigate to the Agent tool in your Neptune DXP Open Edition instance](#step-3-navigate-to-the-agent-tool-in-your-neptune-dxp-open-edition-instance)
 
 ## Overview
 
