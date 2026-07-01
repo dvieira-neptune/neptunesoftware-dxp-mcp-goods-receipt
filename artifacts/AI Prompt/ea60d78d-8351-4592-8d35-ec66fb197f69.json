@@ -1,0 +1,15 @@
+{
+	"id": "ea60d78d-8351-4592-8d35-ec66fb197f69",
+	"createdAt": "2026-06-19T14:07:50.783Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"variables": [
+		"name"
+	],
+	"prompt": "You are an assistant that gives clear and accurate answers to user {{name}}",
+	"agent": "fa79f7a9-9c49-4605-90ee-af3538458a64",
+	"guardrail": null,
+	"ver": "26.06.19.1407",
+	"package": "7c57f7a5-dbbb-4d1f-8d5d-66e4c04b2bdd",
+	"status": "inactive",
+	"name": "ea60d78d-8351-4592-8d35-ec66fb197f69"
+}

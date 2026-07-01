@@ -1,0 +1,453 @@
+{
+	"id": "11cd08df-a9a4-438a-971b-83546c535e83",
+	"createdAt": "2026-06-19T14:04:50.196Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"auth": [
+		{
+			"role": "DEF",
+			"apiAuth": "cd1489c2-12f9-45f9-8408-5513e322e81a",
+			"authName": "NAI_800_LEOHEN",
+			"authDesc": "",
+			"id": "30fb7613-f287-4b8f-b65d-e0e2dc5c0eb0"
+		}
+	],
+	"endpoints": [],
+	"mcpToolMetadata": [
+		{
+			"name": "get_production_orders",
+			"inputSchema": {
+				"type": "object",
+				"properties": {
+					"plant": {
+						"type": "string",
+						"maxLength": 4
+					},
+					"storage_location": {
+						"type": "string",
+						"maxLength": 4
+					}
+				}
+			},
+			"outputSchema": {
+				"type": "object",
+				"properties": {
+					"orders": {
+						"type": "array",
+						"items": {
+							"type": "object",
+							"properties": {
+								"purchase_order_number": {
+									"type": "string",
+									"maxLength": 10
+								},
+								"highlight": {
+									"type": "string"
+								},
+								"vendor_name": {
+									"type": "string",
+									"maxLength": 35
+								},
+								"item_count": {
+									"type": "integer"
+								},
+								"reference_document_number": {
+									"type": "string",
+									"maxLength": 16
+								},
+								"header_text": {
+									"type": "string",
+									"maxLength": 25
+								},
+								"print_type": {
+									"type": "string",
+									"maxLength": 1
+								},
+								"delivery_number": {
+									"type": "string",
+									"maxLength": 10
+								},
+								"delivery_date": {
+									"type": [
+										"string",
+										"null"
+									],
+									"format": "date"
+								},
+								"has_delivery": {
+									"type": "boolean"
+								},
+								"has_family": {
+									"type": "boolean"
+								},
+								"print_enabled": {
+									"type": "boolean"
+								},
+								"search_string": {
+									"type": "string"
+								},
+								"is_collection": {
+									"type": "boolean"
+								},
+								"production_fields_visible": {
+									"type": "boolean"
+								},
+								"inbound_fields_visible": {
+									"type": "boolean"
+								},
+								"icon": {
+									"type": "string"
+								}
+							}
+						}
+					},
+					"order_items": {
+						"type": "array",
+						"items": {
+							"type": "object",
+							"properties": {
+								"ebelp": {
+									"type": "string",
+									"maxLength": 5,
+									"pattern": "^-?[0-9]{0,5}$"
+								},
+								"matnr": {
+									"type": "string",
+									"maxLength": 18
+								},
+								"lgort": {
+									"type": "string",
+									"maxLength": 4
+								},
+								"werks": {
+									"type": "string",
+									"maxLength": 4
+								},
+								"mhdrz": {
+									"type": "number"
+								},
+								"menge": {
+									"type": "number"
+								},
+								"meins": {
+									"type": "string",
+									"maxLength": 3
+								},
+								"insmk": {
+									"type": "string",
+									"maxLength": 1
+								},
+								"highlight": {
+									"type": "string"
+								},
+								"maktx": {
+									"type": "string",
+									"maxLength": 40
+								},
+								"remainingqty": {
+									"type": "string"
+								},
+								"receivedqty": {
+									"type": "string"
+								},
+								"alreadyrec": {
+									"type": "number"
+								},
+								"hasserial": {
+									"type": "boolean"
+								},
+								"serialstate": {
+									"type": "string"
+								},
+								"lifnr": {
+									"type": "string",
+									"maxLength": 10
+								},
+								"reswk": {
+									"type": "string",
+									"maxLength": 4
+								},
+								"eindt": {
+									"type": [
+										"string",
+										"null"
+									],
+									"format": "date"
+								},
+								"sernr": {
+									"type": "string",
+									"maxLength": 18
+								},
+								"selected": {
+									"type": "string"
+								},
+								"vendorbatch": {
+									"type": "string",
+									"maxLength": 10
+								},
+								"shelflife": {
+									"type": [
+										"string",
+										"null"
+									],
+									"format": "date"
+								},
+								"manufdate": {
+									"type": [
+										"string",
+										"null"
+									],
+									"format": "date"
+								},
+								"hasmanufdate": {
+									"type": "boolean"
+								},
+								"hasshelflife": {
+									"type": "boolean"
+								},
+								"hasvendorbatch": {
+									"type": "boolean"
+								},
+								"hasadditional": {
+									"type": "boolean"
+								},
+								"hascertifcate": {
+									"type": "boolean"
+								},
+								"needsquantity": {
+									"type": "boolean"
+								},
+								"prodfields": {
+									"type": "boolean"
+								},
+								"aufnr": {
+									"type": "string",
+									"maxLength": 12
+								},
+								"mhdhb": {
+									"type": "number"
+								},
+								"mhdrz_po": {
+									"type": "number"
+								},
+								"canswer": {
+									"type": "string"
+								},
+								"qtyenabled": {
+									"type": "boolean"
+								},
+								"vbeln": {
+									"type": "string",
+									"maxLength": 10
+								},
+								"posnr": {
+									"type": "string",
+									"maxLength": 6,
+									"pattern": "^-?[0-9]{0,6}$"
+								},
+								"timestamp": {
+									"type": "string"
+								},
+								"collection": {
+									"type": "boolean"
+								}
+							}
+						}
+					}
+				},
+				"required": [
+					"orders",
+					"order_items"
+				]
+			}
+		},
+		{
+			"name": "post_prodcution_goods_receipt",
+			"inputSchema": {
+				"type": "object",
+				"properties": {
+					"reference_document_number": {
+						"type": "string",
+						"maxLength": 16
+					},
+					"document_header_text": {
+						"type": "string",
+						"maxLength": 25
+					},
+					"order_items": {
+						"type": "array",
+						"items": {
+							"type": "object",
+							"properties": {
+								"ebelp": {
+									"type": "string",
+									"maxLength": 5,
+									"pattern": "^-?[0-9]{0,5}$"
+								},
+								"matnr": {
+									"type": "string",
+									"maxLength": 18
+								},
+								"lgort": {
+									"type": "string",
+									"maxLength": 4
+								},
+								"werks": {
+									"type": "string",
+									"maxLength": 4
+								},
+								"mhdrz": {
+									"type": "number"
+								},
+								"menge": {
+									"type": "number"
+								},
+								"meins": {
+									"type": "string",
+									"maxLength": 3
+								},
+								"insmk": {
+									"type": "string",
+									"maxLength": 1
+								},
+								"highlight": {
+									"type": "string"
+								},
+								"maktx": {
+									"type": "string",
+									"maxLength": 40
+								},
+								"remainingqty": {
+									"type": "string"
+								},
+								"receivedqty": {
+									"type": "string"
+								},
+								"alreadyrec": {
+									"type": "number"
+								},
+								"hasserial": {
+									"type": "boolean"
+								},
+								"serialstate": {
+									"type": "string"
+								},
+								"lifnr": {
+									"type": "string",
+									"maxLength": 10
+								},
+								"reswk": {
+									"type": "string",
+									"maxLength": 4
+								},
+								"eindt": {
+									"type": [
+										"string",
+										"null"
+									],
+									"format": "date"
+								},
+								"sernr": {
+									"type": "string",
+									"maxLength": 18
+								},
+								"selected": {
+									"type": "string"
+								},
+								"vendorbatch": {
+									"type": "string",
+									"maxLength": 10
+								},
+								"shelflife": {
+									"type": [
+										"string",
+										"null"
+									],
+									"format": "date"
+								},
+								"manufdate": {
+									"type": [
+										"string",
+										"null"
+									],
+									"format": "date"
+								},
+								"hasmanufdate": {
+									"type": "boolean"
+								},
+								"hasshelflife": {
+									"type": "boolean"
+								},
+								"hasvendorbatch": {
+									"type": "boolean"
+								},
+								"hasadditional": {
+									"type": "boolean"
+								},
+								"hascertifcate": {
+									"type": "boolean"
+								},
+								"needsquantity": {
+									"type": "boolean"
+								},
+								"prodfields": {
+									"type": "boolean"
+								},
+								"aufnr": {
+									"type": "string",
+									"maxLength": 12
+								},
+								"mhdhb": {
+									"type": "number"
+								},
+								"mhdrz_po": {
+									"type": "number"
+								},
+								"canswer": {
+									"type": "string"
+								},
+								"qtyenabled": {
+									"type": "boolean"
+								},
+								"vbeln": {
+									"type": "string",
+									"maxLength": 10
+								},
+								"posnr": {
+									"type": "string",
+									"maxLength": 6,
+									"pattern": "^-?[0-9]{0,6}$"
+								},
+								"timestamp": {
+									"type": "string"
+								},
+								"collection": {
+									"type": "boolean"
+								}
+							}
+						}
+					}
+				},
+				"required": [
+					"order_items"
+				]
+			}
+		}
+	],
+	"url": "https://template.neptune-software.com/sap/bc/http/neptune/dxp/mcp/MCP-GoodsReceipt",
+	"name": "MCP-GoodsReceipt_Marketplace",
+	"ver": "26.06.22.0957",
+	"description": null,
+	"role": null,
+	"username": null,
+	"password": "",
+	"type": "MCP",
+	"sapClient": null,
+	"useClientDeploy": false,
+	"token": "6b3932a9f65925bf032c11089d7112b0",
+	"monitoringName": null,
+	"monitoringEnabled": false,
+	"tlsAllowUntrusted": false,
+	"preRequestHookId": null,
+	"package": "7c57f7a5-dbbb-4d1f-8d5d-66e4c04b2bdd",
+	"mcpProtocol": "HTTP"
+}

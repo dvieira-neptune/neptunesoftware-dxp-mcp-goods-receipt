@@ -1,0 +1,74 @@
+{
+	"id": "fa79f7a9-9c49-4605-90ee-af3538458a64",
+	"createdAt": "2026-06-19T14:06:56.076Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"config": {
+		"vectorConfig": {
+			"k": 1,
+			"threshold": 0.8
+		},
+		"modelConfig": {
+			"lastMessages": 3,
+			"response_format": "text",
+			"temperature": 1,
+			"schema": {}
+		},
+		"provider": {
+			"organization": null,
+			"url": null
+		},
+		"onlyMetadata": false,
+		"preScript": null,
+		"maxSteps": 5,
+		"skills": [],
+		"exposeToolsAsSkills": false,
+		"exposeCard": false,
+		"reasoning": false,
+		"dynamicToolSelection": false,
+		"selectedRemoteMCPTool": {
+			"MCP-GoodsReceipt_Marketplace": [
+				"get_production_orders",
+				"post_prodcution_goods_receipt"
+			]
+		},
+		"useMemory": false,
+		"compactionConfig": {
+			"enabled": false,
+			"contextWindowTokens": 10000,
+			"thresholdPercentage": 50,
+			"modelId": null
+		}
+	},
+	"name": "MCP-GoodsReceipt_Marketplace",
+	"ver": "26.06.22.1001",
+	"version": null,
+	"description": "MCP Enabled Agent from Marketplace",
+	"enableIntelligentApps": null,
+	"package": "7c57f7a5-dbbb-4d1f-8d5d-66e4c04b2bdd",
+	"model": "5bd7a1a2-a2af-f011-8e61-000d3aba8c49",
+	"localMCPConnections": [],
+	"remoteMCPConnections": [
+		{
+			"id": "11cd08df-a9a4-438a-971b-83546c535e83",
+			"name": "MCP-GoodsReceipt_Marketplace",
+			"ver": "26.06.22.0957"
+		}
+	],
+	"roles": [],
+	"tools": [],
+	"tableSources": [],
+	"outputGuardrailsMap": [],
+	"inputGuardrailsMap": [],
+	"prompts": [
+		{
+			"id": "ea60d78d-8351-4592-8d35-ec66fb197f69",
+			"name": "ea60d78d-8351-4592-8d35-ec66fb197f69",
+			"ver": "26.06.19.1407"
+		},
+		{
+			"id": "08d36adb-f718-48fb-b4a1-20d82d5a55f9",
+			"name": "08d36adb-f718-48fb-b4a1-20d82d5a55f9",
+			"ver": "26.06.19.1408"
+		}
+	]
+}

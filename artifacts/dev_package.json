@@ -1,0 +1,89 @@
+{
+	"id": "7c57f7a5-dbbb-4d1f-8d5d-66e4c04b2bdd",
+	"createdAt": "2026-06-18T15:41:11.284Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"git": {
+		"remote": "https://github.com/dvieira-neptune/neptunesoftware-dxp-mcp-goods-receipt",
+		"branch": "master"
+	},
+	"name": "neptunesoftware-dxp-mcp-goods-receipt",
+	"description": "Neptune DXP MCP Goods Receipt Marketplace",
+	"ver": "26.07.01.0923",
+	"enableCICD": true,
+	"internalReadOnly": false,
+	"oeVersion": null,
+	"excludeTemplateFiles": false,
+	"roles": [],
+	"apps": [],
+	"api": [],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [],
+	"jsclass": [],
+	"jsscript_group": [],
+	"theme": [],
+	"theme_generator": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"tile_layout": [],
+	"category": [],
+	"tilegroup_layout": [],
+	"launchpad": [],
+	"launchpad_layout": [],
+	"certificates": [],
+	"role": [],
+	"systems": [
+		{
+			"id": "11cd08df-a9a4-438a-971b-83546c535e83",
+			"name": "MCP-GoodsReceipt_Marketplace",
+			"description": null
+		}
+	],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"i18n": [],
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": [],
+	"theme_ui5": [],
+	"webapp": [],
+	"ui5_control": [],
+	"ai_agent": [
+		{
+			"id": "fa79f7a9-9c49-4605-90ee-af3538458a64",
+			"name": "MCP-GoodsReceipt_Marketplace",
+			"description": "MCP Enabled Agent from Marketplace"
+		}
+	],
+	"ai_model": [],
+	"ai_prompt": [
+		{
+			"id": "ea60d78d-8351-4592-8d35-ec66fb197f69",
+			"agent": "fa79f7a9-9c49-4605-90ee-af3538458a64",
+			"guardrail": null,
+			"name": "ea60d78d-8351-4592-8d35-ec66fb197f69"
+		},
+		{
+			"id": "08d36adb-f718-48fb-b4a1-20d82d5a55f9",
+			"agent": "fa79f7a9-9c49-4605-90ee-af3538458a64",
+			"guardrail": null,
+			"name": "08d36adb-f718-48fb-b4a1-20d82d5a55f9"
+		}
+	],
+	"ai_tool": [],
+	"ai_guardrail": [],
+	"path_rewrite": [],
+	"font": [],
+	"vault": [],
+	"workflow": [],
+	"workflow_logs": []
+}
